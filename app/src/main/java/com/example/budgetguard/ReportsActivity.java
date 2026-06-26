@@ -56,7 +56,7 @@ public class ReportsActivity extends AppCompatActivity {
         loadReport(selectedMonth);
 
         btnLoadReport.setOnClickListener(v -> {
-            String monthText = etReportMonth.getText().toString();
+            String monthText = etReportMonth.getText().toString().trim();
 
             if (monthText.isEmpty()) {
                 Toast.makeText(this, "Δώσε μήνα σε μορφή 2026-06", Toast.LENGTH_SHORT).show();
@@ -95,7 +95,7 @@ public class ReportsActivity extends AppCompatActivity {
         for (int i = 0; i < categoryNames.length; i++) {
             int categoryId = i + 1;
 
-            double limit = databaseHelper.getCategoryLimit(categoryId);
+            double limit = databaseHelper.getCategoryLimitForMonth(categoryId, month);
             double spent = databaseHelper.getSpentForCategoryForMonth(categoryId, month);
             double remaining = limit - spent;
 
