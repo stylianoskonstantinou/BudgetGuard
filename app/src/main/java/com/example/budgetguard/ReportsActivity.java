@@ -69,6 +69,7 @@ public class ReportsActivity extends AppCompatActivity {
     }
 
     private void loadReport(String month) {
+
         double totalBudget = databaseHelper.getMonthlyBudgetForMonth(month);
         double totalExpenses = databaseHelper.getTotalExpensesForMonth(month);
         double remainingBudget = totalBudget - totalExpenses;

@@ -14,7 +14,7 @@ import java.util.Locale;
 public class DatabaseHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "budgetguard.db";
-    private static final int DATABASE_VERSION = 4;
+    private static final int DATABASE_VERSION = 5;
 
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -178,7 +178,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     public double getCategoryLimitForMonth(int categoryId, String month) {
-        double limit = getCategoryLimit(categoryId);
+        double limit = getDefaultCategoryLimit(categoryId);
 
         SQLiteDatabase db = this.getReadableDatabase();
 
@@ -195,6 +195,23 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.close();
 
         return limit;
+    }
+
+    private double getDefaultCategoryLimit(int categoryId) {
+        switch (categoryId) {
+            case 1:
+                return 250;
+            case 2:
+                return 100;
+            case 3:
+                return 300;
+            case 4:
+                return 150;
+            case 5:
+                return 200;
+            default:
+                return 0;
+        }
     }
 
     public double getTotalExpensesForMonth(String monthPrefix) {
