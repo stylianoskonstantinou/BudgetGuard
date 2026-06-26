@@ -124,7 +124,7 @@ public class BudgetActivity extends AppCompatActivity {
                                         ProgressBar progressBar,
                                         TextView infoText) {
 
-        double limit = databaseHelper.getCategoryLimit(categoryId);
+        double limit = databaseHelper.getCategoryLimitForMonth(categoryId, month);
         double spent = databaseHelper.getSpentForCategoryForMonth(categoryId, month);
         double remaining = limit - spent;
 
