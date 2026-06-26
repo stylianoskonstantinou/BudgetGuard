@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ρυθμίσεις Προϋπολογισμού"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/tvCurrentBudget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Τρέχον Budget: 1000 €"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/etNewBudget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Νέο μηνιαίο budget"
+            android:inputType="numberDecimal"/>
+
+        <Button
+            android:id="@+id/btnSaveBudget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Αποθήκευση Budget"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Όρια ανά Κατηγορία"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/etFoodLimit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Όριο Φαγητού"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/etTransportLimit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Όριο Μεταφορών"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/etBillsLimit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Όριο Λογαριασμών"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/etEntertainmentLimit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Όριο Διασκέδασης"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/etShoppingLimit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Όριο Αγορών"
+            android:inputType="numberDecimal"/>
+
+        <Button
+            android:id="@+id/btnSaveCategoryLimits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Αποθήκευση Ορίων"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Φαγητό"/>
+
+        <ProgressBar
+            android:id="@+id/pbFood"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"/>
+
+        <TextView
+            android:id="@+id/tvFoodInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Μεταφορές"/>
+
+        <ProgressBar
+            android:id="@+id/pbTransport"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"/>
+
+        <TextView
+            android:id="@+id/tvTransportInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Λογαριασμοί"/>
+
+        <ProgressBar
+            android:id="@+id/pbBills"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"/>
+
+        <TextView
+            android:id="@+id/tvBillsInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Διασκέδαση"/>
+
+        <ProgressBar
+            android:id="@+id/pbEntertainment"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"/>
+
+        <TextView
+            android:id="@+id/tvEntertainmentInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Αγορές"/>
+
+        <ProgressBar
+            android:id="@+id/pbShopping"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"/>
+
+        <TextView
+            android:id="@+id/tvShoppingInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>

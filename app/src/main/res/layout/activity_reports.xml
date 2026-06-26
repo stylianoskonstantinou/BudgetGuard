@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Αναφορές Μηνών"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/etReportMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Μήνας αναφοράς π.χ. 2026-06"
+            android:inputType="text"
+            android:paddingTop="16dp"/>
+
+        <Button
+            android:id="@+id/btnLoadReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Προβολή Αναφοράς"/>
+
+        <TextView
+            android:id="@+id/tvTotalExpenses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Συνολικά Έξοδα: 0 €"
+            android:textSize="18sp"
+            android:paddingTop="20dp"/>
+
+        <TextView
+            android:id="@+id/tvTotalBudget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Συνολικό Budget: 0 €"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tvRemainingBudget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Υπόλοιπο Budget: 0 €"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tvCategoryReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ανάλυση ανά κατηγορία"
+            android:textSize="16sp"
+            android:paddingTop="24dp"/>
+
+    </LinearLayout>
+</ScrollView>
