@@ -21,21 +21,26 @@ BudgetGuard is an Android application developed in Java using Android Studio. It
 
 ## Installation
 
-Clone the repository:
+### Prerequisites
+
+- Android Studio (latest version recommended)
+- JDK 17 or newer
+- Android SDK
+- Android Emulator or a physical Android device
+
+### Clone the repository
 
 ```bash
 git clone https://github.com/stylianoskonstantinou/BudgetGuard.git
 cd BudgetGuard
 ```
 
-Open the project with **Android Studio**.
+### Run the application
 
-Allow Gradle to sync automatically.
-
-Run the application on:
-
-- Android Emulator
-- Physical Android Device (API 24 or newer)
+1. Open the project in Android Studio.
+2. Wait for Gradle Sync to complete.
+3. Build the project.
+4. Run the application on an Android Emulator or a physical Android device.
 
 ## Project Structure
 
