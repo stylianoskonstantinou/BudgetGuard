@@ -41,6 +41,7 @@ cd BudgetGuard
 2. Wait for Gradle Sync to complete.
 3. Build the project.
 4. Run the application on an Android Emulator or a physical Android device.
+> **Note:** If Android Studio reports a missing SDK, configure the Android SDK location and allow Gradle to synchronize the project before running the application.
 
 ## Project Structure
 
